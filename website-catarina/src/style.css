@@ -15,7 +15,7 @@
 }
 
 .custom-shape-divider-top-1662043649 .shape-fill {
-    fill: #F9C486;
+    fill: #f9c486
 }
 
 /** For mobile devices **/
@@ -33,13 +33,14 @@ body {
   justify-content: center;
   font-family: "Sora";
   overflow-x: hidden;
+  margin:0%
 }
 
 
 h1,
 h2,
 h3 {
-  color: #ffffff;
+  color: rgba(185, 146, 235);
   font-style: normal;
   text-align: center;
 }
@@ -126,9 +127,15 @@ button {
   max-width: 200px;
 }
 
+.stack {
+   background-color: rgba(185, 146, 235, 0.79);
+  margin: 0px;
+  border: 2%;
+
+}
 
 .fa-brands {
-  color:white
+  color:white;
 }
 
 .known-skills{
@@ -137,12 +144,23 @@ button {
   justify-content: center;
   gap: 10%;
   margin: 5px;
-  
+}
+
+.fa-brands:hover{
+    transform: scale(1.5);
 }
 
 .known-skills p{
   text-align: center;
 }
+
+
+
+.project-photo{
+  width: 80vw;
+  align-items: center;
+}
+
 
 .alien {
   animation-name: alien-animation; /* Refers to the name of your @keyframes element below */
@@ -177,4 +195,9 @@ button {
   100% {
     transform: rotate(0deg);
   }
+}
+
+.link {
+  color: rgba(185, 146, 235, 0.79);
+  font-size: 1px;
 }
