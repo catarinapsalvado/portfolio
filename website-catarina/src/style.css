@@ -1,3 +1,31 @@
+.custom-shape-divider-top-1662043649 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1662043649 svg {
+    position: relative;
+    display: block;
+    width: calc(245% + 1.3px);
+    height: 123px;
+}
+
+.custom-shape-divider-top-1662043649 .shape-fill {
+    fill: #F9C486;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1662043649 svg {
+        width: calc(245% + 1.3px);
+        height: 133px;
+    }
+}
+
 body {
   background: rgba(185, 146, 235, 0.79);
   display: flex;
@@ -6,6 +34,7 @@ body {
   font-family: "Sora";
   overflow-x: hidden;
 }
+
 
 h1,
 h2,
@@ -105,9 +134,47 @@ button {
 .known-skills{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10%;
+  margin: 5px;
+  
 }
 
 .known-skills p{
   text-align: center;
+}
+
+.alien {
+  animation-name: alien-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes alien-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
