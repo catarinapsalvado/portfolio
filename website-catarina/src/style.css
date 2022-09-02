@@ -5,6 +5,7 @@
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    z-index: -1;
 }
 
 .custom-shape-divider-top-1662043649 svg {
@@ -24,6 +25,20 @@
         width: calc(245% + 1.3px);
         height: 133px;
     }
+}
+
+header{
+  padding: 7%;
+}
+
+.navbar{
+  gap: 2vw;
+ display: flex;
+ justify-content: right;
+}
+
+#envelope{
+  color:white
 }
 
 body {
