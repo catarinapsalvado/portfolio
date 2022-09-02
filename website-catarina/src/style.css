@@ -40,7 +40,7 @@ body {
 h1,
 h2,
 h3 {
-  color: rgba(185, 146, 235);
+  color: white;
   font-style: normal;
   text-align: center;
 }
@@ -49,6 +49,10 @@ h2 {
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
+}
+
+.white{
+  color: white;
 }
 
 h1 {
@@ -80,7 +84,7 @@ button {
 .photo {
   position: relative;
   display: inline-block;
-   margin: auto 30vw 7% 20vw; 
+  margin: auto 30vw 7% 20vw; 
   
  
 }
@@ -128,10 +132,9 @@ button {
 }
 
 .stack {
-   background-color: rgba(185, 146, 235, 0.79);
+  background-color: rgba(185, 146, 235, 0.79);
   margin: 0px;
   border: 2%;
-
 }
 
 .fa-brands {
@@ -154,7 +157,36 @@ button {
   text-align: center;
 }
 
+.currently-learning-skills{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
+.mongodb{
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.mongodb:hover{
+  transform: scale(1.5);
+}
+
+.typescript{
+width: 5rem;
+display: block;
+display: flex;
+margin-left: 38vw;
+}
+.typeP{
+text-align: center;
+}
+
+.typescript:hover{
+  transform: scale(1.5);
+}
 
 .project-photo{
   width: 80vw;
